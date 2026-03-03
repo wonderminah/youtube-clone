@@ -1,4 +1,17 @@
-const VideoCard = ({ title, channelName }: { title: string, channelName: string }) => {
+const VideoCard = (
+    {
+        title
+        , channelName
+        , viewCount
+        , uploadedAt
+    }:
+        {
+            title: string
+            , channelName: string
+            , viewCount: number
+            , uploadedAt: string
+        }
+) => {
     return (
         <div>
             {/* 썸네일 */}
@@ -14,9 +27,9 @@ const VideoCard = ({ title, channelName }: { title: string, channelName: string 
                     <div><span>{title}</span></div>
                     <div><span>{channelName}</span></div>
                     <div>
-                        <span>2.6M views</span>
+                        <span>{viewCount}</span>
                         <span>•</span>
-                        <span>2 years ago</span>
+                        <span>{uploadedAt}</span>
                     </div>
                 </div>
             </div>

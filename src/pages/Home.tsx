@@ -94,7 +94,12 @@ const Home = () => {
             minWidth: 0
           }}>
             {/* 썸네일카드 */}
-            <VideoCard></VideoCard>
+            <VideoCard
+              title="Soulful Disco House Music Mix - Funky Afternoon Picnic"
+              channelName="Flavour Trip"
+              viewCount={2600000}
+              uploadedAt="2 years ago"
+            />
           </div>
         </div>
       </div>
