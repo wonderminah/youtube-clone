@@ -1,5 +1,5 @@
-import VideoCard from "../components/VideoCard";
-import CategoryTabs from "../components/CategoryTabs";
+import VideoCard from "../components/Contents/VideoCard";
+import CategoryTabs from "../components/Contents/CategoryTabs";
 import Sidebar from "../components/Sidebar/Sidebar";
 import { mockVideos } from "../mocks/videos";
 
@@ -18,7 +18,7 @@ const Home = () => {
 
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
             gap: "15px",
             flex: 1,
             minWidth: 0,

@@ -1,7 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import './App.css'
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import { HEADER_HEIGHT } from "./constants/layout";
 
 function App() {

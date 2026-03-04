@@ -1,4 +1,4 @@
-import { HEADER_HEIGHT } from "../constants/layout";
+import { HEADER_HEIGHT } from "../../constants/layout";
 
 const Header = () => {
   return (
