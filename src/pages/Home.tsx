@@ -1,6 +1,5 @@
-import VideoCard from "../components/Contents/VideoCard";
-import CategoryTabs from "../components/Contents/CategoryTabs";
-import Sidebar from "../components/Sidebar/Sidebar";
+import VideoCard from "../components/Main/Home/VideoCard";
+import CategoryTabs from "../components/Main/Home/CategoryTabs";
 import { mockVideos } from "../mocks/videos";
 
 const Home = () => {
@@ -8,17 +7,13 @@ const Home = () => {
     <>
       <div style={{ display: "flex" }}>
 
-        {/* 사이드바 */}
-        <Sidebar />
-
         {/* 메인화면 */}
         <div>
           {/* 그리드버튼 */}
           <CategoryTabs />
-
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(3, 1fr)",
             gap: "15px",
             flex: 1,
             minWidth: 0,
