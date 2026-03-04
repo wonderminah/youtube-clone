@@ -1,4 +1,4 @@
-import { mockSubscribedChannels } from "../../mocks/subscribedChannels"
+import { mockSubscribedChannels } from "../mocks/subscribedChannels"
 import SidebarItem from "./SidebarItem"
 
 const Sidebar = () => {
