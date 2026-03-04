@@ -9,7 +9,8 @@ const CategoryTabs = () => {
                 gap: "10px",
                 alignItems: "center",
                 whiteSpace: "nowrap",
-                margin: "12px 0px 12px 0px"
+                margin: "12px 0px 12px 0px",
+                padding: "0px 8px"
             }}>
                 {mockCategories.map((category) => (
                     <div key={category} style={{ borderRadius: "8px", padding: "6px 12px 6px 12px", backgroundColor: "rgba(0, 0, 0, 0.05)" }}>

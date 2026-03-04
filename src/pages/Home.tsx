@@ -1,4 +1,4 @@
-import VideoCard from "../components/VideoCard";
+import VideoCard from "../components/VideoCard/VideoCard";
 import CategoryTabs from "../components/CategoryTabs";
 import { mockVideos } from "../mocks/videos";
 
@@ -14,7 +14,7 @@ const Home = () => {
           <div style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "15px",
+            // gap: "15px",
             flex: 1,
             minWidth: 0,
             padding: "24px 0px 0px 0px"

@@ -6,18 +6,10 @@ const Sidebar = () => {
     <div style={{
       width: "240px",
       flexShrink: 0,
-      padding: "12px"
+      padding: "12px",
     }}>
       {/* Home & Shorts */}
       <div>
-        {/* <div style={{ display: "flex", alignItems: "center", height: '40px' }}>
-          <div style={{ flex: "1" }}>아이콘</div>
-          <div style={{ flex: "3" }}>Home</div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", height: '40px' }}>
-          <div style={{ flex: "1" }}>아이콘</div>
-          <div style={{ flex: "3" }}>Shorts</div>
-        </div> */}
         <SidebarItem iconUrl="" name="Home" />
         <SidebarItem iconUrl="" name="Shorts" />
       </div>

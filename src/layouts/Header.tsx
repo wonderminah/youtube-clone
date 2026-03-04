@@ -1,3 +1,4 @@
+import SidebarItem from "../components/SidebarItem";
 import { HEADER_HEIGHT } from "../constants/layout";
 
 const Header = () => {
@@ -5,8 +6,8 @@ const Header = () => {
     <div style={{
       position: "fixed",
       top: 0,
-      left: 0,
-      right: 0,
+      left: 8,
+      right: 8,
       zIndex: 100,
       backgroundColor: "white",
       height: `${HEADER_HEIGHT}px`,
@@ -15,7 +16,7 @@ const Header = () => {
       <div style={{
         display: "flex",
         justifyContent: "space-between",
-        padding: "0px 16px 0px 16px"
+        padding: "0px 0px 0px 16px"
       }}>
         {/* start */}
         <div style={{
@@ -24,7 +25,7 @@ const Header = () => {
           alignItems: "center",
         }}>
           {/* 햄버거버튼 */}
-          <div style={{ padding: "8px" }}>
+          <div style={{ padding: "0 20px 0 4px" }}>
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
               <path d="M20 5H4a1 1 0 000 2h16a1 1 0 100-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Z" />
             </svg>
@@ -54,25 +55,46 @@ const Header = () => {
           alignItems: "center"
         }}>
           <div>[검색창]</div>
-          <div>[마이크버튼]</div>
-        </div>
-        {/* end */}
-        <div style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center"
-        }}>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
               <path d="M18.063 14.5a1 1 0 111.73 1A8.998 8.998 0 0113 19.942V22a1 1 0 11-2 0v-2.058A8.999 8.999 0 014.206 15.5l.866-.5.865-.5a7.002 7.002 0 0012.125 0ZM12 1a5 5 0 015 5v5a5 5 0 01-10 0V6a5 5 0 015-5ZM4.572 14.134a1 1 0 011.365.366l-1.731 1a1 1 0 01.366-1.366ZM12 3a3 3 0 00-3 3v5a3 3 0 106 0V6a3 3 0 00-3-3Z" />
             </svg>
           </div>
+        </div>
+        {/* end */}
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+        }}>
+          {/* + Create */}
           <div>
+            <button style={{
+              display: "flex"
+              , gap: "4px"
+              , backgroundColor: "rgba(0, 0, 0, 0.05)"
+              , border: "none"
+              , borderRadius: "18px"
+              , padding: "4px 12px"
+            }}>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
+                  <path d="M12 3a1 1 0 00-1 1v7H4a1 1 0 000 2h7v7a1 1 0 002 0v-7h7a1 1 0 000-2h-7V4a1 1 0 00-1-1Z"></path>
+                </svg>
+              </div>
+              <div style={{ alignContent: "center" }}>
+                <span style={{ fontSize: "14px", fontWeight: "500" }}>Create</span>
+              </div>
+            </button>
+          </div>
+          {/* 알림버튼 */}
+          <div style={{ padding: "0px 0px 0px 12px" }}>
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
               <path d="M16 19a4 4 0 11-8 0H4.765C3.21 19 2.25 17.304 3.05 15.97l1.806-3.01A1 1 0 005 12.446V8a7 7 0 0114 0v4.446c0 .181.05.36.142.515l1.807 3.01c.8 1.333-.161 3.029-1.716 3.029H16ZM12 3a5 5 0 00-5 5v4.446a3 3 0 01-.428 1.543L4.765 17h14.468l-1.805-3.01A3 3 0 0117 12.445V8a5 5 0 00-5-5Zm-2 16a2 2 0 104 0h-4Z" />
             </svg>
           </div>
-          <div>
+          {/* 프로필 로고 */}
+          <div style={{ padding: "0px 0px 0px 12px" }}>
             <img style={{ borderRadius: "50%" }} id="img" draggable="false" alt="Avatar image" height="32" width="32" src="https://yt3.ggpht.com/ytc/AIdro_mwK69w0kabbpC_A7qf1mJL-avZPj95Br76GjUx6tGYzT9NVb6OX5RKteSLPswj-ijnlw=s88-c-k-c0x00ffffff-no-rj" />
           </div>
         </div>

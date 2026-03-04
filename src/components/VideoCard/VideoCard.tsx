@@ -1,8 +1,9 @@
-import type { Video } from "../types/video"
+import type { Video } from "../../types/video"
+import "./VideoCard.css"
 
 const VideoCard = ({ video }: { video: Video }) => {
     return (
-        <div>
+        <div className="video-card-container">
             {/* 썸네일 */}
             <div style={{ padding: "0 0 12px 0" }}>
                 <img style={{ width: "100%", borderRadius: "12px" }} src={video.thumbnailUrl} />
