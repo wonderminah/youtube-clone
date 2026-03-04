@@ -1,44 +1,17 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router";
 import './App.css'
+import Header from "./components/Header";
+import { HEADER_HEIGHT } from "./constants/layout";
 
 function App() {
   return (
     <>
       {/* 헤더 */}
-      <div style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        width: "100%",
-      }}>
-        {/* start */}
-        <div style={{
-          display: "flex",
-          flexDirection: "row"
-        }}>
-          <div>[햄버거버튼]</div>
-          <div>[로고]</div>
-        </div>
-        {/* center */}
-        <div style={{
-          display: "flex",
-          flexDirection: "row"
-        }}>
-          <div>[검색창]</div>
-          <div>[마이크버튼]</div>
-        </div>
-        {/* end */}
-        <div style={{
-          display: "flex",
-          flexDirection: "row"
-        }}>
-          <div>[+Create]</div>
-          <div>[알림]</div>
-          <div>[프로필]</div>
-        </div>
+      <Header />
+      <div style={{ paddingTop: `${HEADER_HEIGHT}px` }}>
+        <RouterProvider router={router} />
       </div>
-      <RouterProvider router={router} />
     </>
   )
 }

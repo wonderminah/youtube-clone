@@ -1,0 +1,6 @@
+export const mockCategories: string[] = [
+  "All", "News", "Music", "Podcasts", "Radio Star", "Mixes",
+  "Variety shows", "Live", "Falling in love", "Playlists",
+  "Dance-pop", "Cooking shows", "Tourism", "Asian music",
+  "Recently uploaded", "Watched", "New to you",
+]
