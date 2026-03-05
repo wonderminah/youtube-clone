@@ -2,11 +2,9 @@ import { HEADER_HEIGHT } from "../../constants/layout";
 
 const Header = () => {
   return (
-    <div style={{
-      position: "fixed",
+    <div id="header" style={{
+      position: "sticky",
       top: 0,
-      left: 8,
-      right: 8,
       zIndex: 100,
       backgroundColor: "white",
       height: `${HEADER_HEIGHT}px`,

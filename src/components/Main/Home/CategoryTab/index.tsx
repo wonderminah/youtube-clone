@@ -1,8 +1,8 @@
 import { mockCategories } from "../../../../mocks/categories"
 
-const CategoryTabs = () => {
+const CategoryTab = () => {
     return (
-        <div>
+        <div id="category-tab">
             <div style={{
                 width: "100%",
                 display: "flex",
@@ -22,4 +22,4 @@ const CategoryTabs = () => {
     )
 }
 
-export default CategoryTabs
+export default CategoryTab

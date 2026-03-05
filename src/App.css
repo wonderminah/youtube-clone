@@ -2,3 +2,7 @@
   font-family: Roboto, Arial, sans-serif;
   /* border: 1px solid black */
 }
+
+html {
+  scrollbar-gutter: stable; /* 스크롤이 없어도 항상 스크롤 공간을 확보함. 레이아웃 흔들림 완전 제거 */
+}

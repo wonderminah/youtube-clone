@@ -1,23 +1,32 @@
 
 import './App.css';
-import Header from './components/Header/Header';
-import { HEADER_HEIGHT } from './constants/layout';
-import Sidebar from './components/Sidebar';
-import Main from './components/Main';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/HomePage';
+import Shorts from './pages/ShortsPage';
+import Channel from './pages/ChannelPage';
+import Video from './pages/VIdeoPage';
 
 function App() {
-  return (
-    <>
-      {/* 헤더 */}
-      <Header />
-      <div style={{ display: "flex", paddingTop: `${HEADER_HEIGHT}px` }}>
-        <Sidebar />
-        <div>
-          <Main />
-        </div>
-      </div>
-    </>
-  )
+  const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Home />,
+        },
+        {
+            path: "/video/:id",
+            element: <Video />
+        },
+        {
+            path: "/shorts/:id",
+            element: <Shorts />
+        },
+        {
+            path: "/channel/:id",
+            element: <Channel />
+        }
+    ])
+
+    return <RouterProvider router={router} />
 }
 
 export default App;

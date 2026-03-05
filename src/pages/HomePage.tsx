@@ -1,16 +1,24 @@
-import VideoCard from "./VideoCard";
-import CategoryTabs from "./CategoryTabs";
-import { mockVideos } from "../../../mocks/videos";
-
-const Home = () => {
+import VideoCard from "../components/Main/Home/VideoCard";
+import CategoryTab from "../components/Main/Home/CategoryTab";
+import { mockVideos } from "../mocks/videos";
+import Header from "../components/Header/Header";
+import Sidebar from "../components/Sidebar";
+const HomePage = () => {
   return (
     <>
+      {/* 헤더 */}
+      <Header />
+
+      {/* 레이아웃 */}
       <div style={{ display: "flex" }}>
+
+        {/* 사이드바 */}
+        <Sidebar />
 
         {/* 메인화면 */}
         <div>
           {/* 그리드버튼 */}
-          <CategoryTabs />
+          <CategoryTab />
           <div style={{
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
@@ -30,4 +38,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
