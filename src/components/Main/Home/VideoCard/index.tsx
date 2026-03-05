@@ -1,31 +1,31 @@
 import type { Video } from "../../../../types/video"
-import "./VideoCard.css"
+import styles from "./VideoCard.module.css"
 
 const VideoCard = ({ video }: { video: Video }) => {
     return (
-        <div className="video-card-container">
+        <div className={styles.videoCardContainer}>
             {/* 썸네일 */}
-            <div className="video-card-thumbnail">
+            <div className={styles.videoCardThumbnail}>
                 <img src={video.thumbnailUrl} />
             </div>
             {/* 카드 */}
-            <div className="video-card-info">
+            <div className={styles.videoCardInfo}>
                 {/* 로고 */}
-                <div className="video-card-avatar">
+                <div className={styles.videoCardAvatar}>
                     <img src="https://yt3.ggpht.com/by9Fh1prHd_mmc52XM3nscTy2U7qssX0D3sE4w2e6OQAIlEz3wE3MRFImIk9L-xoWtSSYmgkQg=s68-c-k-c0x00ffffff-no-rj" />
                 </div>
                 {/* 상세 */}
                 <div>
                     <div>
-                        <span className="video-card-title">{video.title}</span>
+                        <span className={styles.videoCardTitle}>{video.title}</span>
                     </div>
                     <div>
-                        <span className="video-card-meta">{video.channelName}</span>
+                        <span className={styles.videoCardMeta}>{video.channelName}</span>
                     </div>
                     <div>
-                        <span className="video-card-meta">{video.viewCount}</span>
-                        <span className="video-card-meta"> • </span>
-                        <span className="video-card-meta">{video.uploadedAt}</span>
+                        <span className={styles.videoCardMeta}>{video.viewCount}</span>
+                        <span className={styles.videoCardMeta}> • </span>
+                        <span className={styles.videoCardMeta}>{video.uploadedAt}</span>
                     </div>
                 </div>
             </div>

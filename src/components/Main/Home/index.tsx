@@ -1,5 +1,5 @@
-import VideoCard from "./VideoCard/VideoCard";
-import CategoryTabs from "./CategoryTabs/CategoryTabs";
+import VideoCard from "./VideoCard";
+import CategoryTabs from "./CategoryTabs";
 import { mockVideos } from "../../../mocks/videos";
 
 const Home = () => {

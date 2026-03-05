@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home/Home";
-import Video from "./Video/Video";
-import Shorts from "./Shorts/Shorts";
-import Channel from "./Channel/Channel";
+import Home from "./Home";
+import Video from "./Video";
+import Shorts from "./Shorts";
+import Channel from "./Channel";
 
 const Main = () => {
 
