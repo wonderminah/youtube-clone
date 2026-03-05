@@ -1,7 +1,7 @@
 import VideoCard from "../components/Main/Home/VideoCard";
 import CategoryTab from "../components/Main/Home/CategoryTab";
 import { mockVideos } from "../mocks/videos";
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 const HomePage = () => {
   return (
