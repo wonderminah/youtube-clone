@@ -1,6 +1,6 @@
 import type { Channel } from "../types/channel"
 
-export const mockSubscriptions: Channel[] = [
+export const mockSubscribedChannels: Channel[] = [
   { id: "ch1", name: "Flavour Trip", subscriberCount: 820000, avatarUrl: "https://picsum.photos/seed/ch1/36/36", hasNewVideo: true },
   { id: "ch2", name: "ChilledCow", subscriberCount: 11000000, avatarUrl: "https://picsum.photos/seed/ch2/36/36", hasNewVideo: false },
   { id: "ch3", name: "Satisfy Me", subscriberCount: 4300000, avatarUrl: "https://picsum.photos/seed/ch3/36/36", hasNewVideo: true },

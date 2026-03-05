@@ -1,36 +1,16 @@
-import { Fragment } from "react"
 import styles from "./Sidebar.module.css"
-import { mockSubscriptions } from "../../mocks/subscriptions"
-import SidebarMenuItem from "./SidebarMenuItem"
-import SidebarTitle from "./SidebarTitle"
-import SidebarChannelItem from "./SidebarChannelItem"
+import { mockSubscribedChannels } from "../../mocks/subscriptions"
 import { sidebarSections } from "../../mocks/sidebarSections"
+import SidebarTop from "./SidebarTop"
+import SidebarSubscriptions from "./SidebarSubscriptions"
+import SidebarBottom from "./SidebarBottom"
 
 const Sidebar = () => {
   return (
     <div id="sidebar" className={styles.sidebarContainer}>
-      {sidebarSections.map((section, sectionIndex) => (
-        <Fragment key={sectionIndex}>
-          <div className={styles.sidebarSection}>
-            {section.title &&
-              <SidebarTitle title={section.title} />
-            }
-            {section.items.map((item, itemIndex) => (
-              <SidebarMenuItem key={itemIndex} iconNode={item.iconNode} name={item.name} />
-            ))}
-          </div>
-
-          {/* Subscriptions 섹션을 표시 */}
-          {sectionIndex === 0 && (
-            <div className={styles.sidebarSection}>
-              <SidebarTitle title="Subscriptions" />
-              {mockSubscriptions.map((subscribedChannel, index) => (
-                <SidebarChannelItem key={index} channel={subscribedChannel} />
-              ))}
-            </div>
-          )}
-        </Fragment>
-      ))}
+      <SidebarTop section={sidebarSections[0]} />
+      <SidebarSubscriptions subscribedChannels={mockSubscribedChannels} />
+      <SidebarBottom sections={sidebarSections.slice(1)} />
     </div>
   )
 }

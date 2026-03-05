@@ -1,9 +1,18 @@
 import { useParams } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
 
 const ChannelPage = () => {
     const { id } = useParams();
 
-    return <div>ChannelPage! id: {id}</div>
+    return (
+        <div style={{ display: "flex" }}>
+            <Sidebar />
+
+            <div>
+                ChannelPage
+            </div>
+        </div>
+    )
 }
 
 export default ChannelPage;
