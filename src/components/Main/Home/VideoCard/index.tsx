@@ -6,7 +6,9 @@ const VideoCard = ({ video }: { video: Video }) => {
         <div className={styles.videoCardContainer}>
             {/* 썸네일 */}
             <div className={styles.videoCardThumbnail}>
-                <img src={video.thumbnailUrl} />
+                <a href={`/video/${video.id}`}>
+                    <img src={video.thumbnailUrl} />
+                </a>
             </div>
             {/* 카드 */}
             <div className={styles.videoCardInfo}>

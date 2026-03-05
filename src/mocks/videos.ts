@@ -2,6 +2,7 @@ import type { Video } from "../types/video"
 
 export const mockVideos: Video[] = [
   {
+    id: "aB3kLm",
     title: "Soulful Disco House Music Mix - Funky Afternoon Picnic",
     channelName: "Flavour Trip",
     viewCount: 2600000,
@@ -9,6 +10,7 @@ export const mockVideos: Video[] = [
     thumbnailUrl: "https://picsum.photos/seed/video1/480/270",
   },
   {
+    id: "xQ9pRn",
     title: "Lo-fi Hip Hop Radio - Beats to Relax / Study To",
     channelName: "ChilledCow",
     viewCount: 45000000,
@@ -16,6 +18,7 @@ export const mockVideos: Video[] = [
     thumbnailUrl: "https://picsum.photos/seed/video2/480/270",
   },
   {
+    id: "tY2wZe",
     title: "The Most Satisfying Video in the World - Oddly Satisfying Compilation",
     channelName: "Satisfy Me",
     viewCount: 12000000,
@@ -23,6 +26,7 @@ export const mockVideos: Video[] = [
     thumbnailUrl: "https://picsum.photos/seed/video3/480/270",
   },
   {
+    id: "mJ7cVf",
     title: "How to Build a YouTube Clone with React and TypeScript",
     channelName: "Coding With Dev",
     viewCount: 380000,
@@ -30,6 +34,7 @@ export const mockVideos: Video[] = [
     thumbnailUrl: "https://picsum.photos/seed/video4/480/270",
   },
   {
+    id: "hD4sUg",
     title: "Tokyo 4K - Relaxing Walk Through the Streets of Japan",
     channelName: "Travel Vibes",
     viewCount: 7800000,
@@ -37,6 +42,7 @@ export const mockVideos: Video[] = [
     thumbnailUrl: "https://picsum.photos/seed/video5/480/270",
   },
   {
+    id: "nK6bOi",
     title: "Gordon Ramsay's Perfect Scrambled Eggs",
     channelName: "Gordon Ramsay",
     viewCount: 31000000,
