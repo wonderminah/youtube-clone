@@ -6,19 +6,13 @@ const VideoPage = () => {
   const { id } = useParams();
 
   return (
-    <>
-      {/* 헤더 */}
-      <Header />
+    <div style={{ display: "flex" }}>
+      
 
-      {/* 레이아웃 */}
-      <div style={{ display: "flex" }}>
-
-        {/* 메인화면 */}
-        <div>
-          VideoPage: {id}
-        </div>
+      <div>
+        VideoPage
       </div>
-    </>
+    </div>
   );
 };
 
