@@ -1,4 +1,4 @@
-import type { Video } from "../../types/video"
+import type { Video } from "../../../../types/video"
 import "./VideoCard.css"
 
 const VideoCard = ({ video }: { video: Video }) => {

@@ -1,9 +1,9 @@
 
-import './App.css'
-import Header from "./layouts/Header";
-import { HEADER_HEIGHT } from "./constants/layout";
-import Sidebar from "./layouts/Sidebar";
-import Main from "./layouts/Main";
+import './App.css';
+import Header from './components/Header/Header';
+import { HEADER_HEIGHT } from './constants/layout';
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
 
 function App() {
   return (

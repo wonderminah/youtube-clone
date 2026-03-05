@@ -1,4 +1,4 @@
-import { mockCategories } from "../mocks/categories"
+import { mockCategories } from "../../../../mocks/categories"
 
 const CategoryTabs = () => {
     return (
