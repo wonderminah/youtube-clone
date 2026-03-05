@@ -1,6 +1,6 @@
 import { Fragment } from "react"
-import "./Sidebar.css"
-import { mockSubscribedChannels } from "../../mocks/subscribedChannels"
+import "./Sidebar.module.css"
+import { mockSubscriptions } from "../../mocks/subscriptions"
 import SidebarItem from "./SidebarSections/SidebarItem"
 import SidebarTitle from "./SidebarSections/SidebarTitle"
 import { sidebarSections } from "./SidebarSections/sidebarSections"
@@ -25,7 +25,7 @@ const Sidebar = () => {
           {sectionIndex === 0 && (
             <div className="sidebar-section">
               <SidebarTitle title="Subscriptions" />
-              {mockSubscribedChannels.map((channel, index) => (
+              {mockSubscriptions.map((channel, index) => (
                 <SidebarItem key={index} imgUrl={channel.avatarUrl} name={channel.name} hasNewVideo={channel.hasNewVideo} />
               ))}
             </div>
