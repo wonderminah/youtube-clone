@@ -1,9 +1,9 @@
 import { Fragment } from "react"
 import styles from "./Sidebar.module.css"
 import { mockSubscriptions } from "../../mocks/subscriptions"
-import SidebarItem from "./SidebarSections/SidebarItem"
-import SidebarTitle from "./SidebarSections/SidebarTitle"
-import { sidebarSections } from "./SidebarSections/sidebarSections"
+import SidebarItem from "./SidebarSection/SidebarItem"
+import SidebarTitle from "./SidebarSection/SidebarTitle"
+import { sidebarSections } from "../../mocks/sidebarSections"
 
 const Sidebar = () => {
   return (
