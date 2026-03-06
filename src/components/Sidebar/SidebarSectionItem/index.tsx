@@ -1,8 +1,9 @@
 import type { SidebarSectionItemData } from "../../../constants/sidebarSections"
+import styles from "./SidebarSectionItem.module.css"
 
 const SidebarSectionItem = ({ item }: { item: SidebarSectionItemData }) => {
   return (
-    <a href={item.href} style={{ display: "flex", alignItems: "center", height: "40px", padding: "0 8px", textDecoration: "none", color: "inherit" }}>
+    <a id="sidebar-section-item" href={item.href} className={styles.sidebarSectionItemContainer}>
       <div style={{ flex: 1 }}>
         {typeof item.icon === "string"
           ? <img src={item.icon} height="24" width="24" style={{ borderRadius: "50%" }} />

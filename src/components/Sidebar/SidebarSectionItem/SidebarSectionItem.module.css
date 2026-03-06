@@ -1,0 +1,13 @@
+.sidebarSectionItemContainer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 8px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+}
+
+.sidebarSectionItemContainer:hover {
+  background-color: #f2f2f2;
+}

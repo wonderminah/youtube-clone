@@ -1,6 +1,6 @@
 const SidebarSectionTitle = ({ title }: { title: string }) => {
   return (
-    <div style={{ display: "flex", alignItems: "center", height: "40px", padding: "0 8px" }}>
+    <div id="sidebar-section-title" style={{ display: "flex", alignItems: "center", height: "40px", padding: "0 8px" }}>
       <div style={{ fontSize: "16px", fontWeight: "500" }}>{title}</div>
     </div>
   )

@@ -5,7 +5,7 @@ import styles from "./SidebarSection.module.css"
 
 const SidebarSection = ({ section }: { section: SidebarSectionData }) => {
   return (
-    <div className={styles.sidebarSection}>
+    <div id="sidebar-section" className={styles.sidebarSection}>
       {section.title && <SidebarSectionTitle title={section.title} />}
       {section.items.map((item, index) => (
         <SidebarSectionItem key={index} item={item} />

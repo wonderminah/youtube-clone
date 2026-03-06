@@ -1,8 +1,8 @@
 import { mockCategories } from "../../../../mocks/categories"
 
-const CategoryTab = () => {
+const VideoFilterBar = () => {
     return (
-        <div id="category-tab">
+        <div id="video-filter-bar">
             <div style={{
                 width: "100%",
                 display: "flex",
@@ -22,4 +22,4 @@ const CategoryTab = () => {
     )
 }
 
-export default CategoryTab
+export default VideoFilterBar
