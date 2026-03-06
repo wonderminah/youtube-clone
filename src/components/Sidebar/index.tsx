@@ -1,16 +1,29 @@
 import styles from "./Sidebar.module.css"
+import { SIDEBAR_SECTIONS, type SidebarSectionData } from "../../constants/sidebarSections"
 import { mockSubscribedChannels } from "../../mocks/subscriptions"
-import { sidebarSections } from "../../mocks/sidebarSections"
-import SidebarTop from "./SidebarTop"
-import SidebarSubscriptions from "./SidebarSubscriptions"
-import SidebarBottom from "./SidebarBottom"
+import SidebarSection from "./SidebarSection"
+
+const subscriptionsSection: SidebarSectionData = {
+  title: "Subscriptions",
+  items: mockSubscribedChannels.map(ch => ({
+    name: ch.name,
+    icon: ch.avatarUrl,
+    hasNewVideo: ch.hasNewVideo,
+  }))
+}
+
+const ALL_SECTIONS: SidebarSectionData[] = [
+  SIDEBAR_SECTIONS[0],
+  subscriptionsSection,
+  ...SIDEBAR_SECTIONS.slice(1),
+]
 
 const Sidebar = () => {
   return (
     <div id="sidebar" className={styles.sidebarContainer}>
-      <SidebarTop section={sidebarSections[0]} />
-      <SidebarSubscriptions subscribedChannels={mockSubscribedChannels} />
-      <SidebarBottom sections={sidebarSections.slice(1)} />
+      {ALL_SECTIONS.map((section, index) => (
+        <SidebarSection key={index} section={section} />
+      ))}
     </div>
   )
 }
