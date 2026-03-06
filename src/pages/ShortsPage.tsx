@@ -9,7 +9,7 @@ const ShortsPage = () => {
             <Sidebar />
 
             <div>
-                ShortsPage
+                ShortsPage {id}
             </div>
         </div>
     )

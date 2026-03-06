@@ -1,4 +1,5 @@
 import { HEADER_HEIGHT } from "../../constants/layout";
+import SidebarSectionItem from "../Sidebar/SidebarSectionItem";
 
 const Header = () => {
   return (
@@ -13,16 +14,16 @@ const Header = () => {
       <div style={{
         display: "flex",
         justifyContent: "space-between",
-        padding: "0px 0px 0px 16px"
       }}>
         {/* start */}
         <div style={{
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
+          padding: "8px"
         }}>
           {/* 햄버거버튼 */}
-          <div style={{ padding: "0 20px 0 4px" }}>
+          <div style={{ padding: "0 20px 0 0px" }}>
             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true">
               <path d="M20 5H4a1 1 0 000 2h16a1 1 0 100-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Zm0 6H4a1 1 0 000 2h16a1 1 0 000-2Z" />
             </svg>

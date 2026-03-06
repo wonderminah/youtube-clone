@@ -1,7 +1,11 @@
 import type { SidebarSectionItemData } from "../../../constants/sidebarSections"
 import styles from "./SidebarSectionItem.module.css"
 
-const SidebarSectionItem = ({ item }: { item: SidebarSectionItemData }) => {
+type Props = {
+  item: SidebarSectionItemData
+}
+
+const SidebarSectionItem = ({ item }: Props) => {
   return (
     <a id="sidebar-section-item" href={item.href} className={styles.sidebarSectionItemContainer}>
       <div style={{ flex: 1 }}>

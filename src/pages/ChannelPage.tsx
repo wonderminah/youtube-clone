@@ -9,7 +9,7 @@ const ChannelPage = () => {
             <Sidebar />
 
             <div>
-                ChannelPage
+                ChannelPage {id}
             </div>
         </div>
     )

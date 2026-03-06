@@ -3,7 +3,11 @@ import SidebarSectionTitle from "../SidebarSectionTitle"
 import SidebarSectionItem from "../SidebarSectionItem"
 import styles from "./SidebarSection.module.css"
 
-const SidebarSection = ({ section }: { section: SidebarSectionData }) => {
+type Props = {
+  section: SidebarSectionData
+}
+
+const SidebarSection = ({ section }: Props) => {
   return (
     <div id="sidebar-section" className={styles.sidebarSection}>
       {section.title && <SidebarSectionTitle title={section.title} />}

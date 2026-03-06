@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../../pages/HomePage";
-import Video from "../../pages/VIdeoPage";
+import Video from "../../pages/VideoPage";
 import Shorts from "../../pages/ShortsPage";
 import Channel from "../../pages/ChannelPage";
 
