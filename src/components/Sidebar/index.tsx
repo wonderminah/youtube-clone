@@ -8,6 +8,7 @@ const subscriptionsSection: SidebarSectionData = {
   items: mockSubscribedChannels.map(ch => ({
     name: ch.name,
     icon: ch.avatarUrl,
+    href: `/channel/${ch.id}`,
     hasNewVideo: ch.hasNewVideo,
   }))
 }

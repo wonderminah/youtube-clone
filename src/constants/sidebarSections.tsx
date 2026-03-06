@@ -3,6 +3,7 @@ import type { ReactNode } from "react"
 export type SidebarSectionItemData = {
   name: string
   icon: ReactNode | string
+  href: string
   hasNewVideo?: boolean
 }
 
@@ -21,6 +22,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Home",
+        href: "/",
       },
       {
         icon: (
@@ -29,6 +31,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Shorts",
+        href: "/shorts",
       },
     ],
   },
@@ -42,6 +45,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "History",
+        href: "/feed/history",
       },
       {
         icon: (
@@ -50,6 +54,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Playlists",
+        href: "/feed/playlists",
       },
       {
         icon: (
@@ -58,6 +63,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Watch later",
+        href: "/playlist?list=WL",
       },
       {
         icon: (
@@ -66,6 +72,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Liked videos",
+        href: "/playlist?list=LL",
       },
       {
         icon: (
@@ -74,6 +81,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Your videos",
+        href: "/your-videos",
       },
       {
         icon: (
@@ -82,6 +90,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Downloads",
+        href: "/feed/downloads",
       },
       {
         icon: (
@@ -90,6 +99,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Courses",
+        href: "/feed/courses",
       },
     ],
   },
@@ -103,6 +113,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Music",
+        href: "/music",
       },
       {
         icon: (
@@ -111,6 +122,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Movies & TV",
+        href: "/feed/movies",
       },
       {
         icon: (
@@ -119,6 +131,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Live",
+        href: "/live",
       },
       {
         icon: (
@@ -127,6 +140,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Gaming",
+        href: "/gaming",
       },
       {
         icon: (
@@ -135,6 +149,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Sports",
+        href: "/sports",
       },
       {
         icon: (
@@ -143,6 +158,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Courses",
+        href: "/feed/courses",
       },
     ],
   },
@@ -156,6 +172,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "YouTube Studio",
+        href: "https://studio.youtube.com",
       },
       {
         icon: (
@@ -164,6 +181,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "YouTube Music",
+        href: "https://music.youtube.com",
       },
       {
         icon: (
@@ -172,6 +190,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "YouTube Kids",
+        href: "https://www.youtubekids.com",
       },
     ],
   },
@@ -184,6 +203,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Settings",
+        href: "/account",
       },
       {
         icon: (
@@ -192,6 +212,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Report history",
+        href: "/feed/report_history",
       },
       {
         icon: (
@@ -200,6 +221,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Help",
+        href: "/t/about",
       },
       {
         icon: (
@@ -208,6 +230,7 @@ export const SIDEBAR_SECTIONS: SidebarSectionData[] = [
           </svg>
         ),
         name: "Send feedback",
+        href: "/feedback",
       },
     ],
   },

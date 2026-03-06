@@ -2,7 +2,7 @@ import type { SidebarSectionItemData } from "../../../constants/sidebarSections"
 
 const SidebarSectionItem = ({ item }: { item: SidebarSectionItemData }) => {
   return (
-    <div style={{ display: "flex", alignItems: "center", height: "40px", padding: "0 8px" }}>
+    <a href={item.href} style={{ display: "flex", alignItems: "center", height: "40px", padding: "0 8px", textDecoration: "none", color: "inherit" }}>
       <div style={{ flex: 1 }}>
         {typeof item.icon === "string"
           ? <img src={item.icon} height="24" width="24" style={{ borderRadius: "50%" }} />
@@ -19,7 +19,7 @@ const SidebarSectionItem = ({ item }: { item: SidebarSectionItemData }) => {
           </div>
         )}
       </div>
-    </div>
+    </a>
   )
 }
 
